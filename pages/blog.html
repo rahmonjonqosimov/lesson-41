@@ -6,16 +6,17 @@
     <title>Blog</title>
     <link rel="stylesheet" href="../css/main.css" />
   </head>
-  <body class="font-poppins">
-    <header class="bg-heroBg py-7">
+  <body class="font-poppins pt-[80px]">
+    <header class="bg-heroBg py-7 fixed top-0 left-0 right-0 z-10">
       <div
-        class="container mx-auto px-5 flex flex-col gap-5 lg:items-center items-center lg:flex-row lg:justify-between"
+        class="container mx-auto px-5 flex flex-row gap-5 lg:items-center items-center lg:flex-row justify-between"
       >
         <a href="../index.html" class="logo">
           <img src="../images/header logo.svg" alt="Logo" />
         </a>
         <ul
-          class="list-none flex items-center gap-5 md:flex-row lg:gap-8 flex-col"
+          id="nav-items"
+          class="list-none flex items-center gap-5 bg-[#232536] lg:bg-[#232536] lg:gap-8 flex-col lg:flex-row absolute lg:static top-[80px] left-0 right-0 -translate-x-full lg:translate-x-0 duration-300 py-10 lg:py-0"
         >
           <li>
             <a
@@ -69,6 +70,7 @@
             ></a>
           </li>
         </ul>
+        <button id="btn-menu" class="lg:hidden bg-bx-menu w-6 h-6"></button>
       </div>
     </header>
     <main>
